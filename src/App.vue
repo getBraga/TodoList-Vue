@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>TodoList</h1>
+    <Formulario />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Formulario from "@/components/Formulario.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Formulario,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body,
+h1,
+p,
+form,
+input,
+button,
+div {
+  padding: 0px;
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 </style>
